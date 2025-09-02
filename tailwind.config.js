@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        michroma: ['Michroma', 'sans-serif'], // ✅ this must match the Google font name exactly
+        comfortaa: ['Comfortaa', 'sans-serif'], // new font
       },
     },
   },

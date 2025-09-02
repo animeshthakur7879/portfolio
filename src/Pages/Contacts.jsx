@@ -50,7 +50,7 @@ const Contact = () => {
     
     try {
       // Method 1: Try Formsubmit (Works without API key)
-      const formsubmitResponse = await fetch('https://formsubmit.co/mahaktuwani8@gmail.com', {
+      const formsubmitResponse = await fetch('https://formsubmit.co/animeshthakur7648@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -86,7 +86,7 @@ const Contact = () => {
       const body = encodeURIComponent(
         `Hi there!\n\nName: ${formData.name}\nEmail: ${formData.email}\nSubject: ${formData.subject}\n\nMessage:\n${formData.message}\n\n---\nSent from your contact form`
       );
-      const mailtoLink = `mailto:mahaktuwani8@gmail.com?subject=${subject}&body=${body}`;
+      const mailtoLink = `mailto:animeshthakur7648@gmail.com?subject=${subject}&body=${body}`;
       
       // Open email client immediately
       setTimeout(() => {
@@ -115,10 +115,10 @@ const Contact = () => {
   const contactMethods = [
     {
       title: "Email",
-      value: "mahaktuwani8@gmail.com",
+      value: "animeshthakur7648@gmail.com",
       icon: "📧",
       color: "from-blue-600 to-cyan-600",
-      link: "mailto:mahaktuwani8@gmail.com",
+      link: "mailto:animeshthakur7648@gmail.com",
       copyable: true
     },
     {
@@ -126,7 +126,7 @@ const Contact = () => {
       value: "Quick Message",
       icon: "💬",
       color: "from-green-600 to-emerald-600",
-      link: "https://wa.me/7648950503", // Replace with your WhatsApp number
+      link: "https://wa.me/9111733077", // Replace with your WhatsApp number
       copyable: false
     },
     {
@@ -142,14 +142,14 @@ const Contact = () => {
       value: "Professional Network",
       icon: "💼",
       color: "from-indigo-600 to-blue-600",
-      link: "https://www.linkedin.com/in/mahak-tuwani-3562a8301/", // Replace with your LinkedIn
+      link: "https://www.linkedin.com/in/animesh-thakur-linked/", // Replace with your LinkedIn
       copyable: false
     }
   ];
 
   const socialLinks = [
-    { name: "GitHub", icon: "🔗", url: "https://github.com/mahak820", color: "hover:text-gray-300" },
-    { name: "Instagram", icon: "📸", url: "https://www.instagram.com/mahak_7648/", color: "hover:text-pink-400" },
+    { name: "GitHub", icon: "🔗", url: "https://github.com/animeshthakur7879", color: "hover:text-gray-300" },
+    { name: "Instagram", icon: "📸", url: "https://www.instagram.com/aniiimeshhh/", color: "hover:text-pink-400" },
     { name: "Portfolio", icon: "🌐", url: "https://yourportfolio.com", color: "hover:text-violet-400" }
   ];
 

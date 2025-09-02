@@ -25,17 +25,17 @@ const Experience = () => {
       duration: "May 2025 - Jul 2025",
       description: "During my internship, I worked closely with the development team on live client projects involving modern web technologies. My role focused on building scalable, responsive, and user-friendly applications using React.js for the frontend and Node.js with Express.js for the backend. I implemented RESTful APIs, managed data with MongoDB, and ensured smooth frontend–backend integration.",
       skills: ["React", "Node.js", "MongoDB", "REST APIs", "Git"],
-      certificateImage: "/images/SkyMahak.png",
+      certificateImage: "/images/sky_ani.png",
       color: "violet"
     },
     {
       id: 2,
-      title: "Web Developer Intern",
+      title: "Student Intern",
       company: "E-Skills Web LLP",
       duration: "Aug 2024 - Feb 2025",
       description: "As a MERN Stack Development Intern at E-Skills, Indore, I obtained practical experience in developing full-stack web applications withMongoDB, Express.js, React.js, and Node.js. Creating and integrating REST APIs, managing databases, putting authentication featuresin place, and designing responsive user interfaces were all part of my job. Additionally, I worked in an agile environment with my team,which enhanced my comprehension of full-stack development overall and helped me with problem-solving, debugging, and deployment.",
       skills: ["React", "Tailwind CSS", "JavaScript", "Node.js", "Render", "Express" , "MongoDB"],
-      certificateImage: "/images/EskillsMahak.png",
+      certificateImage: "/images/eskills_ani.png",
       color: "blue"
     },
     // {
@@ -56,9 +56,9 @@ const Experience = () => {
       title: "Hackathon Runner-Up Quasar2.0",
       organization: "47 Billion",
       date: "Feburary 2025",
-      description: "Secured 2nd position in the Quasar National Level Hackathon, competing against 350+ teams from 12 states, with only 9 teams reaching the finals. Collaborated with my team to design and implement a scalable, user-focused solution using modern web technologies. The project was recognized for its technical execution, problem-solving approach, and impactful design, giving me valuable exposure to rapid prototyping, teamwork, and presenting ideas effectively",
+      description: "Secured 2nd position in the Quasar2.0 National Level Hackathon, competing against 350+ teams from 12 states, with only 9 teams reaching the finals. Collaborated with my team to design and implement a scalable, user-focused solution using modern web technologies. The project was recognized for its technical execution, problem-solving approach, and impactful design, giving me valuable exposure to rapid prototyping, teamwork, and presenting ideas effectively",
       category: "Hackathon",
-      certificateImage: "/images/QuasarMahak.jpg",
+      certificateImage: "/images/quasar_ani.jpg",
       color: "purple"
     },
     {
@@ -68,29 +68,29 @@ const Experience = () => {
       date: "August 2025",
       description: "Achieved Finalist position in the Odoo Hackathon, competing among 19,000+ participants across India. Worked on developing an innovative solution leveraging modern technologies, with emphasis on scalability, efficiency, and real-world impact. The recognition highlighted my ability to ideate, prototype, and deliver solutions under competitive and time-bound conditions, while collaborating effectively in a team environment.",
       category: "Hackathon",
-      certificateImage: "/images/OdooMahak.jpg",
+      certificateImage: "/images/odoo_ani.jpg",
       color: "pink"
     },
-    {
-      id: 3,
-      title: "Hackathon Winner",
-      organization: "CodeCrush 2023",
-      date: "October 2023",
-      description: "Led a team of 4 developers to create an innovative solution for sustainable transportation, securing 1st position among 200+ participants. Developed a full-stack application in 48 hours.",
-      category: "Competition",
-      certificateImage: "/api/placeholder/500/350",
-      color: "cyan"
-    },
-    {
-      id: 4,
-      title: "AWS Cloud Practitioner",
-      organization: "Amazon Web Services",
-      date: "August 2023",
-      description: "Achieved AWS Cloud Practitioner certification demonstrating foundational cloud computing knowledge and skills. Gained expertise in AWS core services, security, and architecture principles.",
-      category: "Certification",
-      certificateImage: "/api/placeholder/500/350",
-      color: "emerald"
-    }
+    // {
+    //   id: 3,
+    //   title: "Hackathon Winner",
+    //   organization: "CodeCrush 2023",
+    //   date: "October 2023",
+    //   description: "Led a team of 4 developers to create an innovative solution for sustainable transportation, securing 1st position among 200+ participants. Developed a full-stack application in 48 hours.",
+    //   category: "Competition",
+    //   certificateImage: "/api/placeholder/500/350",
+    //   color: "cyan"
+    // },
+    // {
+    //   id: 4,
+    //   title: "AWS Cloud Practitioner",
+    //   organization: "Amazon Web Services",
+    //   date: "August 2023",
+    //   description: "Achieved AWS Cloud Practitioner certification demonstrating foundational cloud computing knowledge and skills. Gained expertise in AWS core services, security, and architecture principles.",
+    //   category: "Certification",
+    //   certificateImage: "/api/placeholder/500/350",
+    //   color: "emerald"
+    // }
   ];
 
   // Auto-play functionality

@@ -22,12 +22,12 @@ const Hero = () => {
       console.log('Attempting to download resume...');
       
       // Option 1: Direct download link (replace with your actual resume file path)
-      const resumeUrl = '/Mahak_Resume.pdf'; // Update this path to your resume file
+      const resumeUrl = '/Animesh_Thakur_Resume.pdf'; // Update this path to your resume file
       
       // Create a temporary link element for download
       const link = document.createElement('a');
       link.href = resumeUrl;
-      link.download = 'Mahak_Resume.pdf'; // The name the file will have when downloaded
+      link.download = 'Animesh_Thakur_Resume.pdf'; // The name the file will have when downloaded
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -42,7 +42,7 @@ const Hero = () => {
       
       // Fallback: Open resume in new tab if download fails
       try {
-        window.open('/resume/Mahak_Resume.pdf', '_blank');
+        window.open('/resume/Animesh_Thakur_Resume.pdf', '_blank');
         console.log('Fallback: Opening resume in new tab');
       } catch (fallbackError) {
         console.error('Fallback also failed:', fallbackError);

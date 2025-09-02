@@ -72,13 +72,13 @@ const About = () => {
                 <div className="relative ">
   
                         <ProfileCard
-                        name="Mahak Tuwani"
+                        name="Animesh"
                         title="Full Stack Developer"
-                        handle="mahaktuwani8@gmail.com"
+                        handle="animeshthakur7648@gmail.com"
                         status="Online"
                         contactText="Contact Me"
-                        avatarUrl="/images/mahak_final2new.png"
-                        showUserInfo={false}
+                        avatarUrl="/images/Animesh_photo.png"
+                        showUserInfo={true}
                         enableTilt={true}
                         enableMobileTilt={false}
                         onContactClick={() => console.log('Contact clicked')}
@@ -96,21 +96,16 @@ const About = () => {
               >
                 <div className="space-y-4">
                   <h2 className="text-2xl md:text-3xl font-bold text-white">
-                    Hi, I'm a Creative Developer
+                    Hi, I'm a Animesh Thakur
                   </h2>
                   
                   <div className="space-y-4 text-gray-300 leading-relaxed">
                     <p>
-                      I'm passionate about creating digital experiences that bridge the gap between 
-                      design and technology. With a strong foundation in modern web development, 
-                      I specialize in building interactive applications that captivate users.
+                       I'm a Full-Stack Developer specialized in the MERN stack(MongoDB , Express , React , Node.js) and a final-year Computer Science (AI) student at Medi-Caps University.
                     </p>
                     
                     <p>
-                      My journey began with curiosity about how websites work, which led me to 
-                      explore frontend frameworks, 3D web technologies, and user interface design. 
-                      I believe that great code should not only function flawlessly but also 
-                      create memorable experiences.
+                     I build scalable, high-performance web applications with clean architecture and modern UI/UX. From crafting responsive front-ends in React.js to developing robust back-ends with Node.js, Express.js, and MongoDB, I love working across the entire stack to deliver complete solutions.
                     </p>
                     
                     <p>
@@ -131,7 +126,7 @@ const About = () => {
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                      <span className="text-gray-300">3D Web Experiences</span>
+                      <span className="text-gray-300">Backend Development</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-indigo-400 rounded-full"></div>

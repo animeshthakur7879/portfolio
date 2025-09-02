@@ -19,58 +19,58 @@ const Projects = () => {
       description: "Expenso is a smart and simple finance management web app that helps users take full control of their income and expenses. With its clean interface, interactive visualizations, and smart assistant, Expenso makes financial management easier, smarter, and more efficient.",
       image: '/images/Expenso.png', // Replace with your actual image paths
       technologies: ["React", "Node.js", "MongoDB", "Gemeni API" , "Chart.js"],
-      githubUrl: "https://github.com/mahak820/expenspo_moneyTracker.git",
-      liveUrl: "https://github.com/mahak820/expenspo_moneyTracker.git",
+      githubUrl: "https://github.com/animeshthakur7879/expenso-moneyTracker",
+      liveUrl: "https://expenso-80pe.onrender.com/",
       category: "Full Stack"
     },
     {
       id: 2,
+      title: "DevPractice – Online Code Playground",
+      description: "A code playground inspired by CodePen and JSFiddle, featuring live HTML, CSS, and JS editing with real-time preview. Integrated the Monaco Editor to provide a VS Code–like experience. Implemented Firebase Authentication for secure login",
+      image: "/images/DevPractice.png",
+      technologies: ["Node.js", "React", "MongoDB", "Express" , "TailwindCSS"],
+      githubUrl: "https://github.com/animeshthakur7879/DevPractice",
+      liveUrl: "https://dev-practice-v1.onrender.com/",
+      category: "Full Stack"
+    },
+    {
+      id: 3,
+      title: "Wheelie - Car Rental Platform",
+      description: "This full-stack MERN car rental app features admin and user dashboards. Admins can manage car listings, rentals, and customer reviews, while users can browse, book, and manage car reservations. It includes authentication, role-based access, and a responsive UI",
+      image: "/images/Wheelie.png",
+      technologies: ["Node.js", "React", "Redux", "MongoDB" , "Express" , "TailwindCSS"],
+      githubUrl: "https://github.com/animeshthakur7879/Wheelie-Car-Rental",
+      liveUrl: "https://wheelie-frontend.onrender.com/",
+      category: "Full Stack"
+    },
+    {
+      id: 4,
       title: "Quick-Court - Book Your Court Anytime",
       description: "Developed a web platform for searching, booking, and managing sports courts, featuring secure authentication, real-time court availability tracking, and instant booking confirmation. The system also includes role-based access, enabling admins, venue owners, and players to efficiently manage their respective functionalities",
       image: "/images/QuickCourt.png",
-      technologies: ["Node.js", "React", "MongoDB", "Express" , "Chart.js" , "Accertinity UI"],
+      technologies: ["Node.js", "React", "Express", "MongoDB" , "Chart.js" , "RazorPay"],
       githubUrl: "https://github.com/mahak820/OdooHackathonSubmissionFinalMain.git",
       liveUrl: "https://github.com/mahak820/OdooHackathonSubmissionFinalMain.git",
       category: "Full Stack"
     },
     {
-      id: 3,
-      title: "ThinkBuild - Student Project Management System",
-      description: "A smart project management system where students submit proposals and reports, faculty provide grades and feedback, and admins track progress. Built using React, Node.js, and MongoDB, it ensures secure, paperless, and transparent handling of academic projects",
-      image: "/images/ThinkBuild.png",
-      technologies: ["Node.js", "React", "Redux", "MongoDB" , "Express" , "TailwindCSS"],
-      githubUrl: "https://github.com/mahak820/student-project-management.git",
-      liveUrl: "https://think-build.onrender.com/login",
-      category: "Full Stack"
-    },
-    {
-      id: 4,
-      title: "QuickCar - A Car Rental Application",
-      description: "Modern chat application with real-time messaging, file sharing, emoji reactions, and dark/light theme support. Built with Socket.io.",
-      image: "/api/placeholder/400/250",
-      technologies: ["Socket.io", "React", "Express", "Redis"],
-      githubUrl: "https://github.com/yourusername/chat-app",
-      liveUrl: "https://chat-app-demo.vercel.app",
-      category: "Full Stack"
-    },
-    {
       id: 5,
-      title: "ShopFlow",
+      title: "TradeX",
       description: "Developed a cryptocurrency tracker that provides real-time prices, trends, and market data. Integrated search, filter, and watchlist features to deliver a personalized user experience. Implemented live data fetching using CoinGecko/CoinMarketCap APIs for accurate and up-to-date insights",
-      image: "/images/ShopFLow.png",
+      image: "/images/TradeX.png",
       technologies: ["React.js", "Redux", "Crypto-API", "TailwindCSS" , "JavaScript"],
-      githubUrl: "https://github.com/mahak820/crypto-app",
-      liveUrl: "https://shopflow-crypto.netlify.app/",
+      githubUrl: "https://github.com/animeshthakur7879/TradeX-Crypto-app",
+      liveUrl: "https://tradex-crypto.netlify.app/",
       category: "Frontend"
     },
     {
       id: 6,
-      title: "News App",
-      description: "Secure voting system built on blockchain technology ensuring transparency, security, and immutability. Features smart contracts and modern web interface.",
-      image: "/api/placeholder/400/250",
-      technologies: ["Solidity", "Web3.js", "React", "Ethereum"],
-      githubUrl: "https://github.com/mahak820/news-app.git",
-      liveUrl: "https://github.com/mahak820/news-app.git",
+      title: "To-Do App",
+      description: "A responsive To-Do App built with React, Redux, and Tailwind CSS for seamless task management. It allows users to add, edit, and delete tasks while managing state efficiently through Redux. The modern UI powered by Tailwind ensures a clean, minimal, and user-friendly experience across all devices.",
+      image: "/images/Todo.png",
+      technologies: ["React", "Redux", "TailwindCSS", "ContextAPI"],
+      githubUrl: "https://github.com/animeshthakur7879/Tailwind-Todo-App",
+      liveUrl: "https://todo-app-v3-tailwind.netlify.app/",
       category: "Frontend"
     }
   ];
