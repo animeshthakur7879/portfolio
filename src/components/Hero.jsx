@@ -18,11 +18,9 @@ const Hero = () => {
   // Resume download function
   const downloadResume = () => {
     try {
-      console.log('=== RESUME DOWNLOAD DEBUG ===');
-      console.log('Attempting to download resume...');
       
       // Option 1: Direct download link (replace with your actual resume file path)
-      const resumeUrl = '/Animesh_Thakur_Resume.pdf'; // Update this path to your resume file
+      const resumeUrl = '/Updated_Resume.pdf'; // Update this path to your resume file
       
       // Create a temporary link element for download
       const link = document.createElement('a');
@@ -32,7 +30,6 @@ const Hero = () => {
       link.click();
       document.body.removeChild(link);
       
-      console.log('Resume download initiated');
       
       // Optional: Show a success message or notification
       // You can add a toast notification here if you have one
@@ -43,7 +40,6 @@ const Hero = () => {
       // Fallback: Open resume in new tab if download fails
       try {
         window.open('/resume/Animesh_Thakur_Resume.pdf', '_blank');
-        console.log('Fallback: Opening resume in new tab');
       } catch (fallbackError) {
         console.error('Fallback also failed:', fallbackError);
         alert('Resume download failed. Please contact me directly for my resume.');
@@ -117,9 +113,7 @@ const Hero = () => {
   ];
 
   // Handle button clicks based on action type
-  const handleButtonClick = (button) => {
-    console.log(`${button.name} clicked!`);
-    
+  const handleButtonClick = (button) => {    
     if (button.action === "download") {
       downloadResume();
     } else {
@@ -288,7 +282,6 @@ const Hero = () => {
                     onClick={(e) => {
                       e.preventDefault();
                       e.stopPropagation();
-                      console.log(`Mobile: Clicking ${button.name}`);
                       handleButtonClick(button);
                     }}
                     onPointerDown={(e) => {
