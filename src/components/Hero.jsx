@@ -1,52 +1,17 @@
 "use client";
 import { motion } from "framer-motion";
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 // Remove this import - we'll use a more flexible approach
 import Spline from '@splinetool/react-spline';
 import { GridBeam } from "../ui/GridBeam";
 
 const Hero = () => {
   // Test function to verify navigation is working
-  // React.useEffect(() => {
-  //   console.log('Hero component loaded. Navigation should work now.');
-  //   console.log('Available routes:', ['/about', '/projects', '/skills', '/contact', '/resume', '/blog']);
-  // }, []);
-
-  // Resume download function
-  const downloadResume = () => {
-    try {
-      console.log('=== RESUME DOWNLOAD DEBUG ===');
-      console.log('Attempting to download resume...');
-      
-      // Option 1: Direct download link (replace with your actual resume file path)
-      const resumeUrl = '/Mahak_Resume.pdf'; // Update this path to your resume file
-      
-      // Create a temporary link element for download
-      const link = document.createElement('a');
-      link.href = resumeUrl;
-      link.download = 'Mahak_Resume.pdf'; // The name the file will have when downloaded
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      
-      console.log('Resume download initiated');
-      
-      // Optional: Show a success message or notification
-      // You can add a toast notification here if you have one
-      
-    } catch (error) {
-      console.error('Resume download error:', error);
-      
-      // Fallback: Open resume in new tab if download fails
-      try {
-        window.open('/resume/Mahak_Resume.pdf', '_blank');
-        console.log('Fallback: Opening resume in new tab');
-      } catch (fallbackError) {
-        console.error('Fallback also failed:', fallbackError);
-        alert('Resume download failed. Please contact me directly for my resume.');
-      }
-    }
-  };
+  React.useEffect(() => {
+    console.log('Hero component loaded. Navigation should work now.');
+    console.log('Available routes:', ['/about', '/projects', '/skills', '/contact', '/resume', '/blog']);
+  }, []);
 
   // Enhanced navigation handler with better error handling
   const handleNavigation = (route) => {
@@ -63,7 +28,7 @@ const Hero = () => {
         if (route.startsWith('/')) {
           // For relative routes, construct full URL
           const fullUrl = window.location.origin + route;
-          // console.log('Navigating to full URL:', fullUrl);
+          console.log('Navigating to full URL:', fullUrl);
           window.location.href = fullUrl;
         } else {
           // For absolute URLs
@@ -103,8 +68,7 @@ const Hero = () => {
       route: "/about",
       position: { top: "15%", left: "8%" },
       color: "from-violet-600 to-purple-600",
-      hoverColor: "violet",
-      action: "navigate"
+      hoverColor: "violet"
     },
     { 
       name: "Projects", 
@@ -112,8 +76,7 @@ const Hero = () => {
       route: "/projects",
       position: { top: "12%", right: "10%" },
       color: "from-blue-600 to-indigo-600",
-      hoverColor: "blue",
-      action: "navigate"
+      hoverColor: "blue"
     },
     { 
       name: "Skills", 
@@ -121,8 +84,7 @@ const Hero = () => {
       route: "/skills",
       position: { top: "42%", left: "4%" },
       color: "from-yellow-600 to-orange-600",
-      hoverColor: "yellow",
-      action: "navigate"
+      hoverColor: "yellow"
     },
     { 
       name: "Contact", 
@@ -130,39 +92,25 @@ const Hero = () => {
       route: "/contact",
       position: { top: "38%", right: "6%" },
       color: "from-green-600 to-emerald-600",
-      hoverColor: "green",
-      action: "navigate"
+      hoverColor: "green"
     },
     { 
       name: "Resume", 
       icon: "📄", 
-      route: "/resume/Mahak_Resume.pdf", // This will be used for download
+      route: "/resume",
       position: { bottom: "28%", left: "12%" },
       color: "from-red-600 to-pink-600",
-      hoverColor: "red",
-      action: "download" // Special action for resume
+      hoverColor: "red"
     },
     { 
-      name: "Experience", 
+      name: "Blog", 
       icon: "✍️", 
-      route: "/experience",
+      route: "/blog",
       position: { bottom: "25%", right: "14%" },
       color: "from-cyan-600 to-teal-600",
-      hoverColor: "cyan",
-      action: "navigate"
+      hoverColor: "cyan"
     }
   ];
-
-  // Handle button clicks based on action type
-  const handleButtonClick = (button) => {
-    console.log(`${button.name} clicked!`);
-    
-    if (button.action === "download") {
-      downloadResume();
-    } else {
-      handleNavigation(button.route);
-    }
-  };
 
   return (
     // Main wrapper with dark background
@@ -173,18 +121,18 @@ const Hero = () => {
       {/* Content wrapper */}
       <div className="relative z-10 flex min-h-screen items-center justify-center">
         <GridBeam>
-          <div className="flex  flex-col items-center justify-center w-full px-4 mx-auto relative" style={{ minHeight: '100vh' }}>
+          <div className="flex flex-col items-center justify-center w-full px-4 mx-auto relative" style={{ minHeight: '100vh' }}>
             
             {/* Top Heading */}
             <motion.div
               initial={{ opacity: 0, y: -30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="absolute top-8 md:top-16 z-30 "
+              className="absolute top-8 md:top-16 z-30"
             >
               <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold text-white text-center">
                 Welcome to My
-                <span className="block py-5 bg-gradient-to-r from-violet-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">
+                <span className="block bg-gradient-to-r from-violet-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">
                   Digital Universe
                 </span>
               </h1>
@@ -209,7 +157,8 @@ const Hero = () => {
                 >
                   <motion.button
                     onClick={(e) => {
-                      handleButtonClick(button);
+                      console.log(`${button.name} clicked!`);
+                      handleNavigation(button.route);
                     }}
                     whileHover={{ 
                       scale: 1.15,
@@ -222,7 +171,6 @@ const Hero = () => {
                       transition: { duration: 0.1 }
                     }}
                     className="group relative px-8 py-4 bg-gradient-to-br from-slate-900/80 to-slate-800/80 border border-violet-500/50 text-white rounded-2xl backdrop-blur-xl overflow-hidden transition-all duration-300 cursor-pointer shadow-2xl min-w-[140px] hover:border-violet-400/80"
-                    title={button.action === "download" ? "Download Resume" : `Go to ${button.name}`}
                   >
                     {/* Animated background gradient */}
                     <motion.div 
@@ -250,9 +198,6 @@ const Hero = () => {
                       </motion.span>
                       <span className="font-bold text-lg tracking-wide group-hover:text-white/95 transition-colors duration-300">
                         {button.name}
-                        {button.action === "download" && (
-                          <span className="block text-xs opacity-70">Download</span>
-                        )}
                       </span>
                     </div>
                     
@@ -325,8 +270,8 @@ const Hero = () => {
                     onClick={(e) => {
                       e.preventDefault();
                       e.stopPropagation();
-                      console.log(`Mobile: Clicking ${button.name}`);
-                      handleButtonClick(button);
+                      console.log(`Mobile: Clicking ${button.name}, navigating to: ${button.route}`);
+                      handleNavigation(button.route);
                     }}
                     onPointerDown={(e) => {
                       e.preventDefault();
@@ -348,7 +293,6 @@ const Hero = () => {
                       userSelect: 'none',
                       touchAction: 'manipulation'
                     }}
-                    title={button.action === "download" ? "Download Resume" : `Go to ${button.name}`}
                   >
                     {/* Enhanced background gradient */}
                     <motion.div 
@@ -374,9 +318,6 @@ const Hero = () => {
                       </motion.span>
                       <span className="font-bold text-sm text-center leading-tight group-hover:text-white/95 transition-colors duration-300 tracking-wide">
                         {button.name}
-                        {button.action === "download" && (
-                          <span className="block text-xs opacity-70 mt-1">Download</span>
-                        )}
                       </span>
                     </div>
                     
