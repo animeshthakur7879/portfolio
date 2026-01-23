@@ -1,0 +1,19 @@
+.text-type {
+  display: inline-block;
+  white-space: pre-wrap;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 600;
+}
+.text-type__cursor {
+  margin-left: 0.25rem;
+  display: inline-block;
+  /* opacity: 1; */
+  color: #fc00e7;
+  text-shadow: 0 0 8px rgba(56, 189, 248, 0.8);
+    opacity: 0.85;
+
+}
+
+.text-type__cursor--hidden {
+  display: none;
+}

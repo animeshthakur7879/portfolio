@@ -5,6 +5,12 @@ import React from 'react';
 import Spline from '@splinetool/react-spline';
 import { GridBeam } from "../ui/GridBeam";
 import { useNavigate } from "react-router-dom";
+import TextType from '../ui/TextType';
+import Antigravity from '../ui/Antigravity';
+
+
+
+
 
 const Hero = () => {
   // Test function to verify navigation is working
@@ -139,13 +145,27 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="absolute top-8 md:top-16 z-30 "
             >
-              <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold text-white text-center">
-                Welcome to My
-                <span className="block py-5 bg-gradient-to-r from-violet-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">
-                  Digital Universe
-                </span>
-              </h1>
+                <TextType 
+                text={[
+                  "Hi, I'm Animesh 👋",
+                  "I build 💻",
+                  "I fix 🐛",
+                  "Then we ship 🚀"
+                ]}
+                typingSpeed={75}
+                pauseDuration={1500}
+                showCursor
+                cursorCharacter="_"
+                texts={["Welcome to React Bits! Good to see you!","Build some amazing experiences!"]}
+                deletingSpeed={50}
+                variableSpeedEnabled={false}
+                variableSpeedMin={60}
+                variableSpeedMax={120}
+                cursorBlinkDuration={0.5}
+              />
             </motion.div>
+
+ 
 
             {/* Desktop Navigation Buttons - Structured Organic Layout */}
             <div className="hidden lg:block absolute inset-0 z-30 pointer-events-none">
@@ -398,6 +418,29 @@ const Hero = () => {
           <div className="w-1 h-3 bg-white/60 rounded-full mt-2"></div>
         </motion.div>
       </motion.div>
+
+      <div style={{ width: '100%', height: '400px', position: 'relative' }}>
+        <Antigravity
+          count={300}
+          magnetRadius={6}
+          ringRadius={7}
+          waveSpeed={0.4}
+          waveAmplitude={1}
+          particleSize={1.5}
+          lerpSpeed={0.05}
+          color="#5227FF"
+          autoAnimate
+          particleVariance={1}
+          rotationSpeed={0}
+          depthFactor={1}
+          pulseSpeed={3}
+          particleShape="capsule"
+          fieldStrength={10}
+      />
+      </div>
+
+
+
     </div>
   );
 };
