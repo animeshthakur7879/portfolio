@@ -76,7 +76,7 @@ const About = () => {
                         title="Full Stack Developer"
                         handle="animeshthakur7648@gmail.com"
                         status="Online"
-                        contactText="Contact Me"
+                        contactText=""
                         avatarUrl="/images/Animesh_photo.png"
                         showUserInfo={true}
                         enableTilt={true}

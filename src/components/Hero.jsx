@@ -419,7 +419,7 @@ const Hero = () => {
         </motion.div>
       </motion.div>
 
-      <div style={{ width: '100%', height: '400px', position: 'relative' }}>
+      {/* <div style={{ width: '100%', height: '400px', position: 'relative' }}>
         <Antigravity
           count={300}
           magnetRadius={6}
@@ -437,7 +437,7 @@ const Hero = () => {
           particleShape="capsule"
           fieldStrength={10}
       />
-      </div>
+      </div> */}
 
 
 
