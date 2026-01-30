@@ -30,7 +30,7 @@ useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
       sessionStorage.setItem("heroLoaderShown", "true");
-    }, 4000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }
