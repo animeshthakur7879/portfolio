@@ -1,12 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 // Remove this import - we'll use a more flexible approach
 import Spline from '@splinetool/react-spline';
 import { GridBeam } from "../ui/GridBeam";
 import { useNavigate } from "react-router-dom";
 import TextType from '../ui/TextType';
 import Antigravity from '../ui/Antigravity';
+import { ClimbingBoxLoader, HashLoader } from "react-spinners";
 
 
 
@@ -20,6 +21,21 @@ const Hero = () => {
   // }, []);
 
   const navigate = useNavigate()
+const [isLoading, setIsLoading] = useState(() => {
+  return !sessionStorage.getItem("heroLoaderShown");
+});
+
+useEffect(() => {
+  if (isLoading) {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+      sessionStorage.setItem("heroLoaderShown", "true");
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  }
+}, [isLoading]);
+
 
   // Resume download function
   const downloadResume = () => {
@@ -126,6 +142,21 @@ const Hero = () => {
       handleNavigation(button.route);
     }
   };
+
+  if(isLoading){
+    return(
+      <div className="flex items-center justify-center relative min-h-screen w-full bg-[#141618] overflow-hidden">
+              <div className="absolute inset-0 h-full w-full grid-background bg-grid-white/[0.05]" />
+
+<HashLoader color="#5b36a5" cssOverride={{}}
+  size={150}/>
+
+
+
+      </div>
+    )
+  }
+  
 
   return (
     // Main wrapper with dark background
