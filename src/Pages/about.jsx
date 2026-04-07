@@ -13,7 +13,7 @@ const About = () => {
     navigate(route)
   };
 
-  return (
+  return (  
     <div className="relative min-h-screen w-full bg-[#141618] overflow-hidden">
       {/* Grid overlay */}
       <div className="absolute inset-0 h-full w-full grid-background bg-grid-white/[0.05]" />
@@ -100,19 +100,17 @@ const About = () => {
                   </h2>
                   
                   <div className="space-y-4 text-gray-300 leading-relaxed">
-                    <p>
-                       I'm a Full-Stack Developer specialized in the MERN stack(MongoDB , Express , React , Node.js) and a final-year Computer Science (AI) student at Medi-Caps University.
-                    </p>
-                    
-                    <p>
-                     I build scalable, high-performance web applications with clean architecture and modern UI/UX. From crafting responsive front-ends in React.js to developing robust back-ends with Node.js, Express.js, and MongoDB, I love working across the entire stack to deliver complete solutions.
-                    </p>
-                    
-                    <p>
-                      When I'm not coding, you can find me exploring new technologies, contributing 
-                      to open-source projects, or experimenting with creative coding projects that 
-                      push the boundaries of what's possible on the web.
-                    </p>
+                  <p>
+                    I'm a Full-Stack Developer skilled in the MERN stack (MongoDB, Express, React, Node.js) and a final-year Computer Science (AI) student at Medi-Caps University, currently working in a cloud-based QA role at Intellicus Technologies.
+                  </p>
+
+                  <p>
+                    I test the analytics product Kyvos Insights across multiple cloud environments, gaining hands-on experience with cloud systems and real-world deployments, while leveraging my development background to understand complete application workflows.
+                  </p>
+
+                  <p>
+                    I enjoy exploring cloud technologies and building scalable applications, with a goal of becoming a product-focused engineer.
+                  </p>
                   </div>
                 </div>
 
@@ -130,7 +128,7 @@ const About = () => {
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-indigo-400 rounded-full"></div>
-                      <span className="text-gray-300">UI/UX Design</span>
+                      <span className="text-gray-300">Cloud Developments</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
